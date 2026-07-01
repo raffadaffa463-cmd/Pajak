@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download PDF</title>
+    <title>Memulai Download...</title>
+
+    <script>
+        window.onload = function () {
+            const a = document.createElement("a");
+            a.href = "namafile.pdf";
+            a.download = "";
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        };
+    </script>
 </head>
-<body style="font-family:Arial;text-align:center;padding:50px;">
+<body style="font-family:Arial;text-align:center;padding:40px;">
+    <h2>📥 Download sedang dimulai...</h2>
+    <p>Jika download tidak dimulai otomatis, klik tombol di bawah.</p>
 
-    <h2>Download PDF</h2>
-    <p>Klik tombol di bawah untuk mengunduh file.</p>
-
-    <a href="PIT_M_03-DOC010_Personal_Income_Tax_Return_2506_ID-fo-xsl_DN2026639153627309390565000.pdf" download
-       style="background:#2563eb;color:white;padding:15px 30px;
-              text-decoration:none;border-radius:8px;font-size:18px;">
-        📄 Download PDF
+    <a href="PIT_M_03-DOC010_Personal_Income_Tax_Return_2506_ID-fo-xsl_DN2026639153627309390565000.pdf" download>
+        Download Manual
     </a>
-
 </body>
 </html>
