@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .card{
+            background:#fff;
+            padding:30px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,.15);
+            width:320px;
+        }
+
+        h2{
+            margin-bottom:10px;
+        }
+
+        p{
+            color:#666;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#2563eb;
+            color:white;
+            text-decoration:none;
+            padding:14px 28px;
+            border-radius:10px;
+            font-size:18px;
+            font-weight:bold;
+            transition:.2s;
+        }
+
+        .btn:hover{
+            background:#1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Download PDF</h2>
+    <p>Klik tombol di bawah untuk mengunduh file.</p>
+
+    <!-- Ganti namafile.pdf dengan nama file PDF milikmu -->
+    <a href="namafile.pdf" download class="btn">
+        📄 Download Sekarang
+    </a>
+
+</div>
+
+</body>
+</html>
